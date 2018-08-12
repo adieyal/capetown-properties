@@ -62,16 +62,10 @@
                         <td colspan="2">' + (feature.properties['district'] !== null ? Autolinker.link(String(feature.properties['district'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['x'] !== null ? Autolinker.link(String(feature.properties['x'])) : '') + '</td>\
+                        <td colspan="2">Extent: ' + (feature.properties['extent'] !== null ? Autolinker.link(String(feature.properties['extent'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['y'] !== null ? Autolinker.link(String(feature.properties['y'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['extent'] !== null ? Autolinker.link(String(feature.properties['extent'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['value'] !== null ? Autolinker.link(String(feature.properties['value'])) : '') + '</td>\
+                        <td colspan="2">Value: R' + (feature.properties['value'] !== null ? Autolinker.link(String(feature.properties['value'])) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
