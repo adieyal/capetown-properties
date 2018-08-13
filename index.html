@@ -37,8 +37,9 @@
                     var address = properties.address;
                     var value = "R" + formatter.format(properties.value);
                     var extent = formatter.format(properties.extent) + "m&#178";;
+                    var street_view_url = "http://maps.google.com/maps?q=&layer=c&cbll=" + e.lngLat.lat + "," + e.lngLat.lng
 
-                    var description = "<strong>" + address + "</strong><br/>Value: " + value + "<br>Extent: " + extent;
+                    var description = "<strong>" + address + "</strong><br/>Value: " + value + "<br>Extent: " + extent + "<br><a href=\"" + street_view_url + "\">Street View</a>";
 
                     // Ensure that if the map is zoomed out such that multiple
                     // copies of the feature are visible, the popup appears
